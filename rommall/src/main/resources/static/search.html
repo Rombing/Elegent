@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="./bootstrap/bootstrap-4.6.2-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./bootstrap/bootstrap-icons-1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/search.css">
+  <script src="./js/jquery.min.js"></script>
+  <script src="./js/search.js"></script>
+  <script src="./bootstrap/bootstrap-4.6.2-dist/js/bootstrap.bundle.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>搜索页</title>
+</head>
+
+<body class="index">
+<!-- 顶栏 -->
+<div class="top">
+  <div class="inner-top w">
+    <div class="fl">
+      <a href="./index.html">首页</a>
+    </div>
+    <ul class="fr">
+      <li id="nickName"><a href="./login.html">你好，请登录！</a></li>
+      <li class="spacer"></li>
+      <li><a class="style-red" href="/login.html">免费注册</a></li>
+      </li>
+      <li class="spacer"></li>
+      <li><a href="javascript:;">网络无障碍</a></li>
+    </ul>
+    <div class="cls"></div>
+  </div>
+</div>
+<!--- 头部搜索框 --->
+<div class="header">
+  <div class="headerbody w">
+    <div class="hb1">
+      <img src="./imgs/school.png" alt="学校图标">
+    </div>
+    <!-- 父相子绝 -->
+    <div class="hb2">
+      <div class="searchbody">
+        <input class="search_m" id="search_id" type="text" placeholder="搜你所想...">
+        <button><i class="bi bi-search search_icon" onclick="search()"></i></button>
+        <div class="search_t">
+          <ul>
+            <li><a href="#">端午节</a></li>
+            <li><a href="#">手机</a></li>
+            <li><a href="#">鞋子</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="shortcart">
+        <i class="bi bi-cart3"></i>
+        <div id="cartnum">0</div>
+        <a href="./shopcart.html">我的购物车</a>
+      </div>
+    </div>
+    <div class="hb3"></div>
+  </div>
+</div>
+
+<!-- 中间商品部分 -->
+<div class="w">
+  <div class="cartd2">
+    <ul class="cartul1">
+      <li class="cartli2">商品</li>
+      <li class="cartli3">单价</li>
+      <li class="cartli6">操作</li>
+    </ul>
+  </div>
+  <div id="search_list">
+  </div>
+</div>
+</body>
+
+</html>
